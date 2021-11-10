@@ -1,3 +1,4 @@
+#  Creates txt files with default data
 for i in range(1, 101):  # Range
     fn = "A" + f"{i:04d}" + ".txt"  # set Filename
     print(fn)
