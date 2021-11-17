@@ -10,8 +10,8 @@ if __name__ == '__main__':
      # print last 3 letters from an offset
      print(s[-3:-1])
      print(s.count('a')) # count of a
-     print(s.index('a')) # index of a
-     print(s.rindex('a')) # rindex of a
+     print(s.index('a')) # index of a - first instance
+     print(s.rindex('a')) # rindex of a - reverse first instance
 
      #Printing tabs and newlines
      s1='ab\nefg\tgh\txy\bm' # \b is backspace
