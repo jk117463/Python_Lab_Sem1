@@ -53,3 +53,11 @@ for i in range(8):
 
 #debugging - Using Debug option
 # Evaluate expression
+
+print ('*******************************')
+#while
+a = 1
+while a < 15:
+    print (a)
+    a= a + a
+
