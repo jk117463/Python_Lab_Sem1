@@ -61,3 +61,11 @@ while a < 15:
     print (a)
     a= a + a
 
+
+# Indentation defines BLOCK of code in python
+for i in range(8):
+    if i==2:
+        continue
+    if i==6:
+        break
+print(i) # Prints the data after the loop runs
