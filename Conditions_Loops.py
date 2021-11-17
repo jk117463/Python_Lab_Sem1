@@ -32,4 +32,24 @@ print(v)
 
 # Loops
 
+#For Loop
+# i starts from 0 till 7
+for i in range(8):
+    print(i)
 
+# i starts from 3 till 7
+for i in range(3, 7):
+    print(i)
+
+# Stopping and breaking
+
+for i in range(8):
+    if i==2:
+        continue
+    if i==6:
+        break
+    print(i)
+
+
+#debugging - Using Debug option
+# Evaluate expression
