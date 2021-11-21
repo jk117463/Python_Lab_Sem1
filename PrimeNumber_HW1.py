@@ -1,5 +1,5 @@
 
-def check_user_input(input):
+def check_user_input(input): #Function to validate input
     try:
         # Convert it into integer
         val = int(input)
