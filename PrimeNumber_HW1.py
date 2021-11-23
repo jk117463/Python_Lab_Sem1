@@ -13,16 +13,18 @@ def check_user_input(input): #Function to validate input
         print("Input is not an integer number. Pls reenter")
         return False
 
+
+# Program starts here
 validinput = False
 while validinput == False:
-    print("Enter the Limit until which Prime numbers needs to be listed  : ")
+    print("Enter the Limit until which Prime numbers needs to be listed  : ") #Requesting user input
     limit = input()
-    validinput = check_user_input(limit)
+    validinput = check_user_input(limit) #Validating user input
 
 if validinput == True:
     print("List of first %s prime numbers are " % limit)
 
-    counter = 0
+    counter = 0 #Prime number counter
     i = 2
     while counter < int(limit):
         ind = 0 # Indicator variable set value as 0
