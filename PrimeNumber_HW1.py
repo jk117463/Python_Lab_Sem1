@@ -7,7 +7,7 @@ def check_user_input(input): #Function to validate input
             print("Input is an integer number. Number = ", val)
             return True
         else:
-            print("Input is negative number. Number = ", val)
+            print("Input is negative number. Pls reenter")
             return False
     except ValueError:
         print("Input is not an integer number. Pls reenter")
@@ -20,9 +20,11 @@ while validinput == False:
     validinput = check_user_input(limit)
 
 if validinput == True:
-    print("List of prime numbers till %s are " % limit)
+    print("List of first %s prime numbers are " % limit)
 
-    for i in range(2, int(limit)):
+    counter = 0
+    i = 2
+    while counter < int(limit):
         ind = 0 # Indicator variable set value as 0
         j = 2
         while j <= int(i/2): # To continuosly divide by consecutive number from 2 till half of its value
@@ -31,4 +33,6 @@ if validinput == True:
                 break
             j = j + 1
         if ind == 0: #If indicator is still 0, that means it is a prime number
+            counter = counter + 1
             print(i)
+        i = i + 1
