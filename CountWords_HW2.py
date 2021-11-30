@@ -27,7 +27,7 @@ for line in lines:
             valid = False
         if(valid == True):
             word = word.lower() # convert all to lower
-            if word in wordlist: #if word was identified before add to count. Count is value in dictionary, word is the key
+            if word in wordlist: #if word was identified before then add to count. In dictionary - Count is value, word is the key
                 wordlist[word] = wordlist[word] + 1
             else:
                 wordlist.update({word: 1})
