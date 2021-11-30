@@ -1,4 +1,4 @@
-file_path= 'Words.txt' # File name
+file_path= 'Words.txt' # File name from which words are being counted
 
 my_file = open(file_path, 'r') #Open File
 lines = my_file.readlines() #Read lines
