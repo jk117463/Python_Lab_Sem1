@@ -19,7 +19,7 @@ for i in range(3): #for operating 3 input files
     with open(local_read_path, 'r') as this_csv_file:
         this_csv_reader = csv.reader(this_csv_file, delimiter=",")
         header = next(this_csv_reader) #Read Header of input file
-        header.append("Change") #Append new column name
+        header.append("Change %") #Append new column name
         this_csv_writer.writerow(header) #Write header of output file
         for line in this_csv_reader: #Read each line of input file
             this_date = line[0]
@@ -29,7 +29,7 @@ for i in range(3): #for operating 3 input files
             this_close = line[4]
             this_adj_close = line[5]
             this_adj_vol = line[6]
-            this_change = (float(this_close) - float(this_open))/float(this_open) #Calculate new value
+            this_change = (float(this_close) - float(this_open))/float(this_open) * 100 #Calculate new value
             line.append(str(this_change)) #Add the new value to line
             this_csv_writer.writerow(line) #Write the formatted line to output file
     this_output_file.close() #Close output file
