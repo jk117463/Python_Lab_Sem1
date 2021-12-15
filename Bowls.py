@@ -23,6 +23,10 @@ print(tri_recursion(int(limit)))
 
 
 #using sequence
-# def bowls_sequence(n):
-#     # TODO ...
-#     return n
+def bowls_sequence(n):
+    sum = n/2 * (2 + (n-1)*1)
+    return int(sum)
+print("Enter the rows  : ")  # Requesting user input
+limit = input()
+bowls = bowls_sequence(int(limit))
+print('Bowls needed {}'.format(bowls))
