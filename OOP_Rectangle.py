@@ -1,4 +1,8 @@
 class Rectangle:
+    def __init__(self, a= 10, b=6):
+        self.set_params(a,b)
+
+
     def set_params(self, a, par_b):
         self.a = a
         self.b = par_b
@@ -75,3 +79,10 @@ print(r2_list)
 # #del r4_list
 # #print('r4_list:')
 # #print(r4_list)
+
+# constructors
+rc = Rectangle(a=10, b= 20)
+print(rc.calc_surface())
+print('R: {}'.format(rc))
+
+#destructor
