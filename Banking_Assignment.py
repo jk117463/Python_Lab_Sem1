@@ -70,7 +70,7 @@ class Bank:
         to_acc_ind = 0
         charged_ind = 0
         #includes basic validations
-        if from_acc_id != to_acc_id & amount > 0: #from and to cant be same
+        if from_acc_id != to_acc_id & (amount > 0): #from and to cant be same
             for account in self.account_list:
                 if account.id == from_acc_id: #check for existence
                     from_acc_ind = 1
@@ -113,14 +113,14 @@ a1.charge(10000)
 print('After Transaction 3')
 print(b)
 
-print('Transaction4,5 - Credit, Debit of Account 2')
+print('\nTransaction4,5 - Credit, Debit of Account 2')
 #Transaction4 - Deposit 50 to Account 2
 a2.deposit(200)
 #Transaction5 - Charging 5 to Account 2
 a2.charge(100)
 print(b)
 
-print('#Transaction6 - Transferring 200 to Account 2')
+print('\n#Transaction6 - Transferring 200 to Account 2')
 #Transaction6 - Transferring 200 to Account 2
 b.transfer(1,2,200)
 print(b)
